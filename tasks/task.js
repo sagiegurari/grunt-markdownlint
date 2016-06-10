@@ -27,7 +27,7 @@ var markdownlint = require('markdownlint');
  *       },
  *       src: [
  *         'README.md',
- *         '.github/*.md'
+ *         'docs/api.md'
  *       ]
  *     }
  *   }

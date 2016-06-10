@@ -1,6 +1,7 @@
 {
   "files": {
     "included": [
+      "*.js",
       "lib/**/*.js",
       "tasks/**/*.js"
     ]

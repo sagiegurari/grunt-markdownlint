@@ -14,6 +14,33 @@
 ### new Task()
 Exposes the markdown linting task as a function.
 
+**Example**  
+````js
+//to use via grunt, first load the task
+require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
+//or load it manually
+grunt.loadNpmTasks('grunt-markdownlint');
+
+grunt.initConfig({
+  markdownlint: {
+    full: {
+      config: { //configure the linting rules
+        'default': true,
+        'line-length': false,
+        'blanks-around-headers': false,
+        'no-duplicate-header': false,
+        'no-inline-html': false
+      },
+      src: [
+        'README.md',
+        'docs/api.md'
+      ]
+    }
+  }
+});
+
+grunt.registerTask('default', ['markdownlint']);
+````
 <a name="Task+runMarkdownLint"></a>
 
 ### Task#runMarkdownLint(grunt, callback)
