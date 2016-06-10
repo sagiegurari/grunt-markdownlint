@@ -4,6 +4,10 @@
       "*.js",
       "lib/**/*.js",
       "tasks/**/*.js"
+    ],
+    "excluded": [
+      "Gruntfile.js",
+      "!regexp:*lint*.js"
     ]
   }
 }
