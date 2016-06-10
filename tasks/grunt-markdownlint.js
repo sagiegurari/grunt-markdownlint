@@ -17,7 +17,7 @@ module.exports = function registerTask(grunt) {
     var runTask = function runTask() {
         var done = this.async();
 
-        task.runMarkdownLint(grunt, done);
+        task.runMarkdownLint(grunt, this.data, this.filesSrc, done);
     };
     /*eslint-enable no-invalid-this*/
 

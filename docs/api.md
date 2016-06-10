@@ -7,7 +7,7 @@
 
 * [Task](#Task)
     * [new Task()](#new_Task_new)
-    * [#runMarkdownLint(grunt, callback)](#Task+runMarkdownLint)
+    * [#runMarkdownLint(grunt, data, filesSrc, callback)](#Task+runMarkdownLint)
 
 <a name="new_Task_new"></a>
 
@@ -43,7 +43,7 @@ grunt.registerTask('default', ['markdownlint']);
 ````
 <a name="Task+runMarkdownLint"></a>
 
-### Task#runMarkdownLint(grunt, callback)
+### Task#runMarkdownLint(grunt, data, filesSrc, callback)
 Runs the markdown linting task.
 
 **Access:** public  
@@ -51,5 +51,7 @@ Runs the markdown linting task.
 | Param | Type | Description |
 | --- | --- | --- |
 | grunt | <code>object</code> | The grunt object |
+| data | <code>object</code> | All raw user configured data |
+| filesSrc | <code>Array</code> | The src files to lint |
 | callback | <code>function</code> | Callback function invoked with true/false if valid linting result |
 

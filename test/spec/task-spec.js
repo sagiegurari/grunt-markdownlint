@@ -31,7 +31,7 @@ describe('Task Tests', function () {
                 callback();
             };
 
-            task.runMarkdownLint(grunt, function (valid) {
+            task.runMarkdownLint(grunt, undefined, undefined, function (valid) {
                 assert.isTrue(valid);
                 assert.isTrue(lintCalled);
 
@@ -54,9 +54,7 @@ describe('Task Tests', function () {
                 callback();
             };
 
-            task.data = {};
-
-            task.runMarkdownLint(grunt, function (valid) {
+            task.runMarkdownLint(grunt, {}, undefined, function (valid) {
                 assert.isTrue(valid);
                 assert.isTrue(lintCalled);
 
@@ -79,9 +77,7 @@ describe('Task Tests', function () {
                 callback();
             };
 
-            task.filesSrc = [1, 2, 3];
-
-            task.runMarkdownLint(grunt, function (valid) {
+            task.runMarkdownLint(grunt, undefined, [1, 2, 3], function (valid) {
                 assert.isTrue(valid);
                 assert.isTrue(lintCalled);
 
@@ -104,11 +100,9 @@ describe('Task Tests', function () {
                 callback();
             };
 
-            task.data = {
+            task.runMarkdownLint(grunt, {
                 config: ['test', true, 5]
-            };
-
-            task.runMarkdownLint(grunt, function (valid) {
+            }, undefined, function (valid) {
                 assert.isTrue(valid);
                 assert.isTrue(lintCalled);
 
@@ -132,11 +126,9 @@ describe('Task Tests', function () {
                 callback();
             };
 
-            task.data = {
+            task.runMarkdownLint(grunt, {
                 strings: 'test string'
-            };
-
-            task.runMarkdownLint(grunt, function (valid) {
+            }, undefined, function (valid) {
                 assert.isTrue(valid);
                 assert.isTrue(lintCalled);
 
@@ -160,11 +152,9 @@ describe('Task Tests', function () {
                 callback();
             };
 
-            task.data = {
+            task.runMarkdownLint(grunt, {
                 frontMatter: 'test frontMatter'
-            };
-
-            task.runMarkdownLint(grunt, function (valid) {
+            }, undefined, function (valid) {
                 assert.isTrue(valid);
                 assert.isTrue(lintCalled);
 
@@ -195,7 +185,7 @@ describe('Task Tests', function () {
                         warnCalled = true;
                     }
                 }
-            }, function (valid) {
+            }, undefined, undefined, function (valid) {
                 assert.isTrue(warnCalled);
                 assert.isFalse(valid);
 
@@ -234,7 +224,7 @@ describe('Task Tests', function () {
                         warnCalled = true;
                     }
                 }
-            }, function (valid) {
+            }, undefined, undefined, function (valid) {
                 assert.isTrue(warnCalled);
                 assert.isTrue(valid);
 

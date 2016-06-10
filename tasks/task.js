@@ -47,16 +47,18 @@ function Task() {
  * @memberof! Task
  * @public
  * @param {object} grunt - The grunt object
+ * @param {object} data - All raw user configured data
+ * @param {Array} filesSrc - The src files to lint
  * @param {function} callback - Callback function invoked with true/false if valid linting result
  */
-Task.prototype.runMarkdownLint = function (grunt, callback) {
+Task.prototype.runMarkdownLint = function (grunt, data, filesSrc, callback) {
     var self = this;
 
-    var data = self.data || {};
+    data = data || {};
 
     //set mandatory options
     var options = {
-        files: self.filesSrc,
+        files: filesSrc,
         config: data.config
     };
 
