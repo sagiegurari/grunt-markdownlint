@@ -26,25 +26,26 @@ For linting rules, please see [Rules](https://github.com/DavidAnson/markdownlint
 In order to use the markdownlint plugin, please use following example:
 
 ```js
+//to use via grunt, first load the task
 require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
 //or load it manually
 grunt.loadNpmTasks('grunt-markdownlint');
 
 grunt.initConfig({
   markdownlint: {
-      full: {
-          config: { //configure the linting rules
-            'default': true,
-            'line-length': false,
-            'blanks-around-headers': false,
-            'no-duplicate-header': false,
-            'no-inline-html': false
-          },
-          src: [
-              'README.md',
-              '.github/*.md'
-          ]
-      }
+    full: {
+      config: { //configure the linting rules
+        'default': true,
+        'line-length': false,
+        'blanks-around-headers': false,
+        'no-duplicate-header': false,
+        'no-inline-html': false
+      },
+      src: [
+        'README.md',
+        '.github/*.md'
+      ]
+    }
   }
 });
 

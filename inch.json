@@ -1,0 +1,8 @@
+{
+  "files": {
+    "included": [
+      "lib/**/*.js",
+      "tasks/**/*.js"
+    ]
+  }
+}
