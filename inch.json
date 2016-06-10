@@ -6,7 +6,7 @@
       "tasks/**/*.js"
     ],
     "excluded": [
-      "Gruntfile.js",
+      "**/Gruntfile.js",
       "!regexp:*lint*.js"
     ]
   }
