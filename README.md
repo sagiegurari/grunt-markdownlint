@@ -1,2 +1,79 @@
 # grunt-markdownlint
-A grunt task for markdown style checker and lint tool.
+
+[![NPM Version](http://img.shields.io/npm/v/grunt-markdownlint.svg?style=flat)](https://www.npmjs.org/package/grunt-markdownlint) [![Build Status](https://travis-ci.org/sagiegurari/grunt-markdownlint.svg)](http://travis-ci.org/sagiegurari/grunt-markdownlint) [![Coverage Status](https://coveralls.io/repos/sagiegurari/grunt-markdownlint/badge.svg)](https://coveralls.io/r/sagiegurari/grunt-markdownlint) [![Code Climate](https://codeclimate.com/github/sagiegurari/grunt-markdownlint/badges/gpa.svg)](https://codeclimate.com/github/sagiegurari/grunt-markdownlint) [![bitHound Code](https://www.bithound.io/github/sagiegurari/grunt-markdownlint/badges/code.svg)](https://www.bithound.io/github/sagiegurari/grunt-markdownlint) [![Inline docs](http://inch-ci.org/github/sagiegurari/grunt-markdownlint.svg?branch=master)](http://inch-ci.org/github/sagiegurari/grunt-markdownlint)<br>
+[![License](https://img.shields.io/npm/l/grunt-markdownlint.svg?style=flat)](https://github.com/sagiegurari/grunt-markdownlint/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/grunt-markdownlint.svg?style=flat)](https://www.npmjs.org/package/grunt-markdownlint) [![Dependency Status](https://david-dm.org/sagiegurari/grunt-markdownlint.svg)](https://david-dm.org/sagiegurari/grunt-markdownlint) [![devDependency Status](https://david-dm.org/sagiegurari/grunt-markdownlint/dev-status.svg)](https://david-dm.org/sagiegurari/grunt-markdownlint#info=devDependencies)
+
+> A grunt task for markdown style checker and lint tool.
+
+* [Overview](#overview)
+* [Usage](#usage)
+* [Installation](#installation)
+* [API Documentation](docs/api.md)
+* [Contributing](.github/CONTRIBUTING.md)
+* [Release History](#history)
+* [License](#license)
+
+<a name="overview"></a>
+## Overview
+The markdownlint grunt plugin enables to run rule based linting on your project markdown files.
+
+See [markdownlint](https://github.com/DavidAnson/markdownlint) for more information.
+
+For linting rules, please see [Rules](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md) document.
+
+<a name="usage"></a>
+## Usage
+In order to use the markdownlint plugin, please use following example:
+
+```js
+require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
+//or load it manually
+grunt.loadNpmTasks('grunt-markdownlint');
+
+grunt.initConfig({
+  markdownlint: {
+      full: {
+          config: { //configure the linting rules
+            'default': true,
+            'line-length': false,
+            'blanks-around-headers': false,
+            'no-duplicate-header': false,
+            'no-inline-html': false
+          },
+          src: [
+              'README.md',
+              '.github/*.md'
+          ]
+      }
+  }
+});
+
+grunt.registerTask('default', ['markdownlint']);
+```
+
+The different options are defined in the markdownlint [api](https://github.com/DavidAnson/markdownlint#api) documentation.
+
+<a name="installation"></a>
+## Installation
+In order to use this library, just run the following npm install command:
+
+```sh
+npm install --save-dev grunt-markdownlint
+```
+
+## API Documentation
+See full docs at: [API Docs](docs/api.md)
+
+## Contributing
+See [contributing guide](.github/CONTRIBUTING.md)
+
+<a name="history"></a>
+## Release History
+
+| Date        | Version | Description |
+| ----------- | ------- | ----------- |
+| 2016-06-10  | v0.0.1  | Initial release |
+
+<a name="license"></a>
+## License
+Developed by Sagie Gur-Ari and licensed under the Apache 2 open source license.

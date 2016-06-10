@@ -1,0 +1,21 @@
+'use strict';
+
+module.exports = function (grunt) {
+    require('time-grunt')(grunt);
+    require('load-grunt-tasks')(grunt);
+
+    var options = {
+        BuildConfig: {
+            libDirectory: 'tasks',
+            testDirectory: 'test',
+            targetDirectory: 'target',
+            buildDirectory: 'build'
+        },
+        config: {
+            src: 'project/build/*.js'
+        }
+    };
+
+    var configs = require('load-grunt-configs')(grunt, options);
+    grunt.initConfig(configs);
+};

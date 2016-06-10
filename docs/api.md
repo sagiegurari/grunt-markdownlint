@@ -1,0 +1,28 @@
+<a name="Task"></a>
+
+## Task
+**Kind**: global class  
+**Access:** public  
+**Author:** Sagie Gur-Ari  
+
+* [Task](#Task)
+    * [new Task()](#new_Task_new)
+    * [#runMarkdownLint(grunt, callback)](#Task+runMarkdownLint)
+
+<a name="new_Task_new"></a>
+
+### new Task()
+Exposes the markdown linting task as a function.
+
+<a name="Task+runMarkdownLint"></a>
+
+### Task#runMarkdownLint(grunt, callback)
+Runs the markdown linting task.
+
+**Access:** public  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| grunt | <code>object</code> | The grunt object |
+| callback | <code>function</code> | Callback function invoked with true/false if valid linting result |
+

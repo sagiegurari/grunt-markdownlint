@@ -1,0 +1,20 @@
+{
+  "critics": {
+    "lint": {
+      "engine": "eslint"
+    },
+    "wc": {
+      "limit": 100000
+    }
+  },
+  "ignore": [
+    "Gruntfile.js",
+    "test/**/*.js",
+    "project/**/*.js",
+    "example/**/*.js"
+  ],
+  "test": [
+    "**/test/**",
+    "**/spec/**"
+  ]
+}
