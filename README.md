@@ -74,7 +74,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-06-10  | v0.0.3  | Initial release |
+| 2016-06-14  | v0.0.4  | Initial release |
 
 <a name="license"></a>
 ## License
