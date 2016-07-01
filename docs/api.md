@@ -24,12 +24,14 @@ grunt.loadNpmTasks('grunt-markdownlint');
 grunt.initConfig({
   markdownlint: {
     full: {
-      config: { //configure the linting rules
-        'default': true,
-        'line-length': false,
-        'blanks-around-headers': false,
-        'no-duplicate-header': false,
-        'no-inline-html': false
+      options: {
+        config: { //configure the linting rules
+          'default': true,
+          'line-length': false,
+          'blanks-around-headers': false,
+          'no-duplicate-header': false,
+          'no-inline-html': false
+        }
       },
       src: [
         'README.md',

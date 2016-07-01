@@ -23,6 +23,9 @@ describe('Grunt Markdownlint Tests', function () {
         assert.isFunction(taskFunction);
 
         taskFunction.call({
+            options: function () {
+                return {};
+            },
             async: function () {
                 return function (valid) {
                     assert.isTrue(valid);

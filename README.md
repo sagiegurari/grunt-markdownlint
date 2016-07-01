@@ -35,12 +35,14 @@ grunt.loadNpmTasks('grunt-markdownlint');
 grunt.initConfig({
   markdownlint: {
     full: {
-      config: { //configure the linting rules
-        'default': true,
-        'line-length': false,
-        'blanks-around-headers': false,
-        'no-duplicate-header': false,
-        'no-inline-html': false
+      options: {
+        config: { //configure the linting rules
+          'default': true,
+          'line-length': false,
+          'blanks-around-headers': false,
+          'no-duplicate-header': false,
+          'no-inline-html': false
+        }
       },
       src: [
         'README.md',
@@ -74,6 +76,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2016-07-01  | v0.1.0  | Updated task config to use options |
 | 2016-06-28  | v0.0.6  | Maintenance |
 | 2016-06-14  | v0.0.5  | Initial release |
 
