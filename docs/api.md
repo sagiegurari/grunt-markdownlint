@@ -1,18 +1,18 @@
-<a name="Task"></a>
+<a name="Linter"></a>
 
-## Task
+## Linter
 **Kind**: global class  
 **Access:** public  
 **Author:** Sagie Gur-Ari  
 
-* [Task](#Task)
-    * [new Task()](#new_Task_new)
-    * [#runMarkdownLint(grunt, data, filesSrc, callback)](#Task+runMarkdownLint)
+* [Linter](#Linter)
+    * [new Linter()](#new_Linter_new)
+    * [#run(grunt, markdownlint)](#Linter+run)
 
-<a name="new_Task_new"></a>
+<a name="new_Linter_new"></a>
 
-### new Task()
-Exposes the markdown linting task as a function.
+### new Linter()
+Exposes the markdown linting task.
 
 **Example**  
 ````js
@@ -43,9 +43,9 @@ grunt.initConfig({
 
 grunt.registerTask('default', ['markdownlint']);
 ````
-<a name="Task+runMarkdownLint"></a>
+<a name="Linter+run"></a>
 
-### Task#runMarkdownLint(grunt, data, filesSrc, callback)
+### Linter#run(grunt, markdownlint)
 Runs the markdown linting task.
 
 **Access:** public  
@@ -53,7 +53,5 @@ Runs the markdown linting task.
 | Param | Type | Description |
 | --- | --- | --- |
 | grunt | <code>object</code> | The grunt object |
-| data | <code>object</code> | All raw user configured data |
-| filesSrc | <code>Array</code> | The src files to lint |
-| callback | <code>function</code> | Callback function invoked with true/false if valid linting result |
+| markdownlint | <code>function</code> | The markdownlint library |
 

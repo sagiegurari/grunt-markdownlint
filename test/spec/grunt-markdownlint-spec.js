@@ -11,9 +11,9 @@ describe('Grunt Markdownlint Tests', function () {
         var registerCalled = false;
 
         var taskFunction = task({
-            registerMultiTask: function (name, taskFunction) {
+            registerMultiTask: function (name, taskFunc) {
                 assert.equal(name, 'markdownlint');
-                assert.isFunction(taskFunction);
+                assert.isFunction(taskFunc);
 
                 registerCalled = true;
             }

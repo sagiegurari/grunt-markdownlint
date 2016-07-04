@@ -1,12 +1,12 @@
 'use strict';
 
-var markdownlint = require('markdownlint');
-
+/*jslint debug: true */
+/*istanbul ignore next*/
 /**
- * Exposes the markdown linting task as a function.
+ * Exposes the markdown linting task.
  *
  * @author Sagie Gur-Ari
- * @class Task
+ * @class Linter
  * @public
  * @example
  * ````js
@@ -38,29 +38,30 @@ var markdownlint = require('markdownlint');
  * grunt.registerTask('default', ['markdownlint']);
  * ````
  */
-function Task() {
-    this.lint = markdownlint;
+function Linter() {
+    //should not be called
 }
+/*jslint debug: false */
 
 /**
  * Runs the markdown linting task.
  *
  * @function
- * @memberof! Task
+ * @memberof! Linter
  * @public
  * @param {object} grunt - The grunt object
- * @param {object} data - All raw user configured data
- * @param {Array} filesSrc - The src files to lint
- * @param {function} callback - Callback function invoked with true/false if valid linting result
+ * @param {function} markdownlint - The markdownlint library
  */
-Task.prototype.runMarkdownLint = function (grunt, data, filesSrc, callback) {
+Linter.prototype.run = function (grunt, markdownlint) {
     var self = this;
 
-    data = data || {};
+    var done = self.async();
+
+    var data = self.options({});
 
     //set mandatory options
     var options = {
-        files: filesSrc,
+        files: self.filesSrc,
         config: data.config
     };
 
@@ -71,14 +72,14 @@ Task.prototype.runMarkdownLint = function (grunt, data, filesSrc, callback) {
         }
     });
 
-    self.lint(options, function onLintDone(error, result) {
+    markdownlint(options, function onLintDone(error, result) {
         var resultString = error || ((result || '').toString());
         if (resultString) {
             grunt.fail.warn('\n' + resultString + '\n');
         }
 
-        callback(!error || !resultString);
+        done(!error || !resultString);
     });
 };
 
-module.exports = Task;
+module.exports = Linter;
