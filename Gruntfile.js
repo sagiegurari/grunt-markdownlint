@@ -10,8 +10,7 @@ module.exports = function (grunt) {
         BuildConfig: {
             libDirectory: 'tasks',
             testDirectory: 'test',
-            targetDirectory: 'target',
-            buildDirectory: 'build'
+            targetDirectory: 'target'
         },
         config: {
             src: 'project/build/*.js'
