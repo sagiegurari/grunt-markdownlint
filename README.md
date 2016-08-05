@@ -1,7 +1,7 @@
 # grunt-markdownlint
 
 [![NPM Version](http://img.shields.io/npm/v/grunt-markdownlint.svg?style=flat)](https://www.npmjs.org/package/grunt-markdownlint) [![Build Status](https://travis-ci.org/sagiegurari/grunt-markdownlint.svg)](http://travis-ci.org/sagiegurari/grunt-markdownlint) [![Coverage Status](https://coveralls.io/repos/sagiegurari/grunt-markdownlint/badge.svg)](https://coveralls.io/r/sagiegurari/grunt-markdownlint) [![Code Climate](https://codeclimate.com/github/sagiegurari/grunt-markdownlint/badges/gpa.svg)](https://codeclimate.com/github/sagiegurari/grunt-markdownlint) [![bitHound Code](https://www.bithound.io/github/sagiegurari/grunt-markdownlint/badges/code.svg)](https://www.bithound.io/github/sagiegurari/grunt-markdownlint) [![Inline docs](http://inch-ci.org/github/sagiegurari/grunt-markdownlint.svg?branch=master)](http://inch-ci.org/github/sagiegurari/grunt-markdownlint)<br>
-[![License](https://img.shields.io/npm/l/grunt-markdownlint.svg?style=flat)](https://github.com/sagiegurari/grunt-markdownlint/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/grunt-markdownlint.svg?style=flat)](https://www.npmjs.org/package/grunt-markdownlint) [![Dependency Status](https://david-dm.org/sagiegurari/grunt-markdownlint.svg)](https://david-dm.org/sagiegurari/grunt-markdownlint) [![devDependency Status](https://david-dm.org/sagiegurari/grunt-markdownlint/dev-status.svg)](https://david-dm.org/sagiegurari/grunt-markdownlint#info=devDependencies)<br>
+[![License](https://img.shields.io/npm/l/grunt-markdownlint.svg?style=flat)](https://github.com/sagiegurari/grunt-markdownlint/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/grunt-markdownlint.svg?style=flat)](https://www.npmjs.org/package/grunt-markdownlint) [![Dependency Status](https://david-dm.org/sagiegurari/grunt-markdownlint.svg)](https://david-dm.org/sagiegurari/grunt-markdownlint) [![devDependency Status](https://david-dm.org/sagiegurari/grunt-markdownlint/dev-status.svg)](https://david-dm.org/sagiegurari/grunt-markdownlint?type=dev)<br>
 [![Retire Status](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/grunt-markdownlint/master/package.json)](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/grunt-markdownlint/master/package.json)
 
 > A grunt task for markdown style checker and lint tool.
@@ -76,7 +76,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2016-08-03  | v0.1.12 | Maintenance |
+| 2016-08-05  | v0.1.13 | Maintenance |
 | 2016-07-01  | v0.1.0  | Updated task config to use options |
 | 2016-06-28  | v0.0.6  | Maintenance |
 | 2016-06-14  | v0.0.5  | Initial release |
