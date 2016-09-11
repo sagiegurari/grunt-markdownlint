@@ -1,6 +1,6 @@
 {
   "name": "grunt-markdownlint",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A grunt task for markdown style checker and lint tool.",
   "author": {
     "name": "Sagie Gur-Ari",
@@ -62,9 +62,7 @@
     "grunt-mocha-istanbul": "latest",
     "husky": "latest",
     "istanbul": "latest",
-    "jit-grunt": "latest",
     "js-project-commons": "latest",
-    "mocha": "latest",
-    "time-grunt": "latest"
+    "mocha": "latest"
   }
 }
