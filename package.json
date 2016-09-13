@@ -1,6 +1,6 @@
 {
   "name": "grunt-markdownlint",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A grunt task for markdown style checker and lint tool.",
   "author": {
     "name": "Sagie Gur-Ari",
@@ -49,11 +49,13 @@
     "grunt-cli": "latest",
     "grunt-concurrent": "latest",
     "grunt-contrib-clean": "latest",
+    "grunt-contrib-csslint": "latest",
     "grunt-contrib-jshint": "latest",
     "grunt-coveralls": "latest",
     "grunt-eslint": "latest",
     "grunt-force-task": "latest",
     "grunt-gitdown": "latest",
+    "grunt-htmllint": "latest",
     "grunt-jsbeautifier": "latest",
     "grunt-jscs": "latest",
     "grunt-jsdoc-to-markdown": "latest",
