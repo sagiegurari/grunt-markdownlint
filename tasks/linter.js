@@ -66,7 +66,11 @@ Linter.prototype.run = function (grunt, markdownlint) {
     };
 
     //add optional options
-    ['strings', 'frontMatter'].forEach(function addOption(option) {
+    [
+        'strings',
+        'frontMatter',
+        'resultVersion'
+    ].forEach(function addOption(option) {
         if (data[option]) {
             options[option] = data[option];
         }
