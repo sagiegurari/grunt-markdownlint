@@ -49,7 +49,7 @@ function Linter() {
  * @function
  * @memberof! Linter
  * @public
- * @param {object} grunt - The grunt object
+ * @param {Object} grunt - The grunt object
  * @param {function} markdownlint - The markdownlint library
  */
 Linter.prototype.run = function (grunt, markdownlint) {

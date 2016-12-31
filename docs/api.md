@@ -52,6 +52,6 @@ Runs the markdown linting task.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| grunt | <code>object</code> | The grunt object |
+| grunt | <code>Object</code> | The grunt object |
 | markdownlint | <code>function</code> | The markdownlint library |
 

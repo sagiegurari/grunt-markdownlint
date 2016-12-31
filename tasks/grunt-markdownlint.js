@@ -7,7 +7,7 @@ var Linter = require('./linter');
  *
  * @function
  * @private
- * @param {object} grunt - The grunt object
+ * @param {Object} grunt - The grunt object
  * @returns {function} The task function
  */
 module.exports = function registerTask(grunt) {
