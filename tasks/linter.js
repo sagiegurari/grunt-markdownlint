@@ -59,7 +59,7 @@ Linter.prototype.run = function (grunt, markdownlint) {
 
     var data = self.options({});
 
-    var files = self.filesSrc;
+    var files = self.filesSrc || [];
     var filesNumber = files.length;
 
     //set mandatory options

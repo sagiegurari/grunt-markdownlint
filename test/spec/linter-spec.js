@@ -6,9 +6,20 @@ var chai = require('chai');
 var assert = chai.assert;
 var Linter = require('../../tasks/linter');
 
-describe('Linter Tests', function () {
+describe('Linter', function () {
     describe('run', function () {
         var grunt = {
+            log: {
+                ok: function (message) {
+                    assert.isDefined(message);
+                }
+            },
+            util: {
+                pluralize: function (number, message) {
+                    assert.isNumber(number);
+                    assert.isDefined(message);
+                }
+            },
             fail: {
                 warn: function () {
                     assert.fail();
@@ -47,7 +58,7 @@ describe('Linter Tests', function () {
                 lintCalled = true;
 
                 assert.deepEqual(options, {
-                    files: undefined,
+                    files: [],
                     config: undefined
                 });
 
@@ -72,7 +83,7 @@ describe('Linter Tests', function () {
                 lintCalled = true;
 
                 assert.deepEqual(options, {
-                    files: undefined,
+                    files: [],
                     config: undefined
                 });
 
@@ -124,7 +135,7 @@ describe('Linter Tests', function () {
                 lintCalled = true;
 
                 assert.deepEqual(options, {
-                    files: undefined,
+                    files: [],
                     config: ['test', true, 5]
                 });
 
@@ -151,7 +162,7 @@ describe('Linter Tests', function () {
                 lintCalled = true;
 
                 assert.deepEqual(options, {
-                    files: undefined,
+                    files: [],
                     config: undefined,
                     strings: 'test string'
                 });
@@ -179,7 +190,7 @@ describe('Linter Tests', function () {
                 lintCalled = true;
 
                 assert.deepEqual(options, {
-                    files: undefined,
+                    files: [],
                     config: undefined,
                     frontMatter: 'test frontMatter'
                 });
@@ -213,7 +224,7 @@ describe('Linter Tests', function () {
                 lintCalled = true;
 
                 assert.deepEqual(options, {
-                    files: undefined,
+                    files: [],
                     config: undefined
                 });
 
@@ -248,7 +259,7 @@ describe('Linter Tests', function () {
                 lintCalled = true;
 
                 assert.deepEqual(options, {
-                    files: undefined,
+                    files: [],
                     config: undefined
                 });
 
