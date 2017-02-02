@@ -59,9 +59,12 @@ Linter.prototype.run = function (grunt, markdownlint) {
 
     var data = self.options({});
 
+    var files = self.filesSrc;
+    var filesNumber = files.length;
+
     //set mandatory options
     var options = {
-        files: self.filesSrc,
+        files: files,
         config: data.config
     };
 
@@ -78,8 +81,11 @@ Linter.prototype.run = function (grunt, markdownlint) {
 
     markdownlint(options, function onLintDone(error, result) {
         var resultString = error || ((result || '').toString());
+
         if (resultString) {
             grunt.fail.warn('\n' + resultString + '\n');
+        } else {
+            grunt.log.ok(filesNumber + ' ' + grunt.util.pluralize(filesNumber, 'file/files') + ' lint free.');
         }
 
         done(!error || !resultString);
