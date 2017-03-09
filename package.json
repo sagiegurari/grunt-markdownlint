@@ -1,6 +1,6 @@
 {
   "name": "grunt-markdownlint",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "A grunt task for markdown style checker and lint tool.",
   "author": {
     "name": "Sagie Gur-Ari",
@@ -43,7 +43,7 @@
     "grunt": "grunt"
   },
   "dependencies": {
-    "markdownlint": "^0.3.1"
+    "markdownlint": "^0.4.0"
   },
   "devDependencies": {
     "chai": "latest",

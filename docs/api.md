@@ -2,8 +2,8 @@
 
 ## Linter
 **Kind**: global class  
-**Access:** public  
-**Author:** Sagie Gur-Ari  
+**Access**: public  
+**Author**: Sagie Gur-Ari  
 
 * [Linter](#Linter)
     * [new Linter()](#new_Linter_new)
@@ -48,7 +48,7 @@ grunt.registerTask('default', ['markdownlint']);
 ### Linter#run(grunt, markdownlint)
 Runs the markdown linting task.
 
-**Access:** public  
+**Access**: public  
 
 | Param | Type | Description |
 | --- | --- | --- |
