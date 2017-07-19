@@ -76,7 +76,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2017-06-26  | v1.0.40 | Maintenance |
+| 2017-07-19  | v1.0.41 | Maintenance |
 | 2016-11-04  | v1.0.11 | Support new markdownlint 0.3.0 options |
 | 2016-11-04  | v1.0.10 | Maintenance |
 | 2016-07-01  | v0.1.0  | Updated task config to use options |
