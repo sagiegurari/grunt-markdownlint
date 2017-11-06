@@ -5,5 +5,8 @@ node_js:
   - "8"
   - "6"
   - "4"
+matrix:
+  allow_failures:
+    - node_js: node
 before_install:
   - npm install -g npm@latest
