@@ -34,7 +34,7 @@ grunt.loadNpmTasks('grunt-markdownlint');
 
 grunt.initConfig({
   markdownlint: {
-    full: {
+    example1: {
       options: {
         config: { //configure the linting rules
           'default': true,
@@ -48,11 +48,20 @@ grunt.initConfig({
         'README.md',
         '.github/*.md'
       ]
+    },
+    example2: {
+      options: {
+        config: grunt.file.readJSON(rulesFile) //read linting rules from file
+      },
+      src: [
+        'README.md',
+        '.github/*.md'
+      ]
     }
   }
 });
 
-grunt.registerTask('default', ['markdownlint']);
+grunt.registerTask('default', ['markdownlint:example1']);
 ```
 
 The different options are defined in the markdownlint [api](https://github.com/DavidAnson/markdownlint#api) documentation.
