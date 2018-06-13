@@ -1,8 +1,7 @@
 # grunt-markdownlint
 
-[![NPM Version](http://img.shields.io/npm/v/grunt-markdownlint.svg?style=flat)](https://www.npmjs.org/package/grunt-markdownlint) [![Build Status](https://travis-ci.org/sagiegurari/grunt-markdownlint.svg)](http://travis-ci.org/sagiegurari/grunt-markdownlint) [![Coverage Status](https://coveralls.io/repos/sagiegurari/grunt-markdownlint/badge.svg)](https://coveralls.io/r/sagiegurari/grunt-markdownlint) [![bitHound Code](https://www.bithound.io/github/sagiegurari/grunt-markdownlint/badges/code.svg)](https://www.bithound.io/github/sagiegurari/grunt-markdownlint) [![Inline docs](http://inch-ci.org/github/sagiegurari/grunt-markdownlint.svg?branch=master)](http://inch-ci.org/github/sagiegurari/grunt-markdownlint)<br>
-[![License](https://img.shields.io/npm/l/grunt-markdownlint.svg?style=flat)](https://github.com/sagiegurari/grunt-markdownlint/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/grunt-markdownlint.svg?style=flat)](https://www.npmjs.org/package/grunt-markdownlint) [![Dependency Status](https://david-dm.org/sagiegurari/grunt-markdownlint.svg)](https://david-dm.org/sagiegurari/grunt-markdownlint) [![devDependency Status](https://david-dm.org/sagiegurari/grunt-markdownlint/dev-status.svg)](https://david-dm.org/sagiegurari/grunt-markdownlint?type=dev)<br>
-[![Known Vulnerabilities](https://snyk.io/test/github/sagiegurari/grunt-markdownlint/badge.svg)](https://snyk.io/test/github/sagiegurari/grunt-markdownlint) [![Retire Status](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/grunt-markdownlint/master/package.json)](http://retire.insecurity.today/api/image?uri=https://raw.githubusercontent.com/sagiegurari/grunt-markdownlint/master/package.json)
+[![NPM Version](http://img.shields.io/npm/v/grunt-markdownlint.svg?style=flat)](https://www.npmjs.org/package/grunt-markdownlint) [![Build Status](https://travis-ci.org/sagiegurari/grunt-markdownlint.svg)](http://travis-ci.org/sagiegurari/grunt-markdownlint) [![Coverage Status](https://coveralls.io/repos/sagiegurari/grunt-markdownlint/badge.svg)](https://coveralls.io/r/sagiegurari/grunt-markdownlint) [![Known Vulnerabilities](https://snyk.io/test/github/sagiegurari/grunt-markdownlint/badge.svg)](https://snyk.io/test/github/sagiegurari/grunt-markdownlint) [![Inline docs](http://inch-ci.org/github/sagiegurari/grunt-markdownlint.svg?branch=master)](http://inch-ci.org/github/sagiegurari/grunt-markdownlint)<br>
+[![License](https://img.shields.io/npm/l/grunt-markdownlint.svg?style=flat)](https://github.com/sagiegurari/grunt-markdownlint/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/grunt-markdownlint.svg?style=flat)](https://www.npmjs.org/package/grunt-markdownlint) [![Dependency Status](https://david-dm.org/sagiegurari/grunt-markdownlint.svg)](https://david-dm.org/sagiegurari/grunt-markdownlint) [![devDependency Status](https://david-dm.org/sagiegurari/grunt-markdownlint/dev-status.svg)](https://david-dm.org/sagiegurari/grunt-markdownlint?type=dev)
 
 > A grunt task for markdown style checker and lint tool.
 
@@ -85,6 +84,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2018-06-13  | v2.0.1  | Maintenance |
 | 2018-06-07  | v2.0.0  | Upgrade markdownlint and minimal node version |
 | 2018-05-29  | v1.1.6  | Upgrade markdownlint version |
 | 2016-11-04  | v1.0.11 | Support new markdownlint 0.3.0 options |
