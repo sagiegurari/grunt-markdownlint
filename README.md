@@ -84,7 +84,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2018-07-22  | v2.1.0  | Maintenance |
+| 2019-02-05  | v2.2.0  | Maintenance |
 | 2018-06-07  | v2.0.0  | Upgrade markdownlint and minimal node version |
 | 2018-05-29  | v1.1.6  | Upgrade markdownlint version |
 | 2016-11-04  | v1.0.11 | Support new markdownlint 0.3.0 options |
