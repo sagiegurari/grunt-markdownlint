@@ -1,6 +1,6 @@
 {
   "name": "grunt-markdownlint",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "A grunt task for markdown style checker and lint tool.",
   "author": {
     "name": "Sagie Gur-Ari",
@@ -37,10 +37,13 @@
     "format": "grunt format",
     "build": "grunt build",
     "jstest": "grunt jstest",
-    "debug": "mocha --debug-brk=5858 --no-timeouts --ui bdd --reporter spec --recursive ./test/spec",
-    "prepush": "npm run build",
     "postpublish": "grunt post-publish",
     "grunt": "grunt"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run build"
+    }
   },
   "dependencies": {
     "markdownlint": "^0.12.0"
