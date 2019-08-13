@@ -14,7 +14,8 @@ module.exports = function (grunt) {
         buildConfig: {
             projectRoot: __dirname,
             nodeProject: true,
-            libDirectory: 'tasks'
+            libDirectory: 'tasks',
+            skipSecurityCheck: true
         }
     });
 };
