@@ -1,6 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
-| 2019-08-13  | v2.6.0  | Maintenance |
+| 2019-10-07  | v2.7.0  | Upgrade markdownlint version |
 | 2018-06-07  | v2.0.0  | Upgrade markdownlint and minimal node version |
 | 2018-05-29  | v1.1.6  | Upgrade markdownlint version |
 | 2016-11-04  | v1.0.11 | Support new markdownlint 0.3.0 options |
