@@ -53,18 +53,18 @@ function Linter() {
  * @param {function} markdownlint - The markdownlint library
  */
 Linter.prototype.run = function (grunt, markdownlint) {
-    var self = this;
+    const self = this;
 
-    var done = self.async();
+    const done = self.async();
 
-    var data = self.options({});
+    const data = self.options({});
 
-    var files = self.filesSrc || [];
-    var filesNumber = files.length;
+    const files = self.filesSrc || [];
+    const filesNumber = files.length;
 
     //set mandatory options
-    var options = {
-        files: files,
+    const options = {
+        files,
         config: data.config
     };
 
@@ -80,7 +80,7 @@ Linter.prototype.run = function (grunt, markdownlint) {
     });
 
     markdownlint(options, function onLintDone(error, result) {
-        var resultString = error || ((result || '').toString());
+        const resultString = error || (result || '').toString();
 
         if (resultString) {
             grunt.fail.warn('\n' + resultString + '\n');

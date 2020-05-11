@@ -8,7 +8,7 @@ module.exports = function (grunt) {
     //load markdownlint task
     grunt.loadTasks('tasks');
 
-    var commons = require('js-project-commons');
+    const commons = require('js-project-commons');
 
     commons.grunt.config.initConfig(grunt, {
         buildConfig: {

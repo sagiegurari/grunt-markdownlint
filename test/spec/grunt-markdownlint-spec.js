@@ -1,25 +1,25 @@
 'use strict';
 
-var chai = require('chai');
-var assert = chai.assert;
-var task = require('../../tasks/grunt-markdownlint');
+const chai = require('chai');
+const assert = chai.assert;
+const task = require('../../tasks/grunt-markdownlint');
 
 describe('Grunt Markdownlint', function () {
     it('register', function (done) {
-        var registerCalled = false;
-        var okCalled = false;
+        let registerCalled = false;
+        let okCalled = false;
 
-        var grunt = {
-            registerMultiTask: function (name, taskFunc) {
+        const grunt = {
+            registerMultiTask(name, taskFunc) {
                 assert.equal(name, 'markdownlint');
                 assert.isFunction(taskFunc);
 
                 registerCalled = true;
             },
-            options: function () {
+            options() {
                 return {};
             },
-            async: function () {
+            async() {
                 return function (valid) {
                     assert.isTrue(valid);
                     assert.isTrue(okCalled);
@@ -28,19 +28,19 @@ describe('Grunt Markdownlint', function () {
                 };
             },
             log: {
-                ok: function () {
+                ok() {
                     okCalled = true;
                 }
             },
             util: {
-                pluralize: function (number, message) {
+                pluralize(number, message) {
                     assert.isNumber(number);
                     assert.isDefined(message);
                 }
             }
         };
 
-        var taskFunction = task(grunt);
+        const taskFunction = task(grunt);
 
         assert.isTrue(registerCalled);
         assert.isFunction(taskFunction);

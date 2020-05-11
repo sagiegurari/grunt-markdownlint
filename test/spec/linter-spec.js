@@ -1,32 +1,32 @@
 'use strict';
 
-var chai = require('chai');
-var assert = chai.assert;
-var Linter = require('../../tasks/linter');
+const chai = require('chai');
+const assert = chai.assert;
+const Linter = require('../../tasks/linter');
 
 describe('Linter', function () {
     describe('run', function () {
-        var grunt = {
+        const grunt = {
             log: {
-                ok: function (message) {
+                ok(message) {
                     assert.isDefined(message);
                 }
             },
             util: {
-                pluralize: function (number, message) {
+                pluralize(number, message) {
                     assert.isNumber(number);
                     assert.isDefined(message);
                 }
             },
             fail: {
-                warn: function () {
+                warn() {
                     assert.fail();
                 }
             }
         };
 
-        var create = function (data, filesSrc) {
-            var linter = new Linter();
+        const create = function (data, filesSrc) {
+            const linter = new Linter();
 
             linter.options = function (options) {
                 assert.deepEqual(options, {});
@@ -40,8 +40,8 @@ describe('Linter', function () {
         };
 
         it('no data', function (done) {
-            var lintCalled = false;
-            var linter = create();
+            let lintCalled = false;
+            const linter = create();
 
             linter.async = function () {
                 return function (valid) {
@@ -65,8 +65,8 @@ describe('Linter', function () {
         });
 
         it('empty data', function (done) {
-            var lintCalled = false;
-            var linter = create({});
+            let lintCalled = false;
+            const linter = create({});
 
             linter.async = function () {
                 return function (valid) {
@@ -90,8 +90,8 @@ describe('Linter', function () {
         });
 
         it('files provided', function (done) {
-            var lintCalled = false;
-            var linter = create(undefined, [1, 2, 3]);
+            let lintCalled = false;
+            const linter = create(undefined, [1, 2, 3]);
 
             linter.async = function () {
                 return function (valid) {
@@ -115,8 +115,8 @@ describe('Linter', function () {
         });
 
         it('config provided', function (done) {
-            var lintCalled = false;
-            var linter = create({
+            let lintCalled = false;
+            const linter = create({
                 config: ['test', true, 5]
             });
 
@@ -142,8 +142,8 @@ describe('Linter', function () {
         });
 
         it('strings provided', function (done) {
-            var lintCalled = false;
-            var linter = create({
+            let lintCalled = false;
+            const linter = create({
                 strings: 'test string'
             });
 
@@ -170,8 +170,8 @@ describe('Linter', function () {
         });
 
         it('frontMatter provided', function (done) {
-            var lintCalled = false;
-            var linter = create({
+            let lintCalled = false;
+            const linter = create({
                 frontMatter: 'test frontMatter'
             });
 
@@ -198,9 +198,9 @@ describe('Linter', function () {
         });
 
         it('lint error', function (done) {
-            var lintCalled = false;
-            var warnCalled = false;
-            var linter = create();
+            let lintCalled = false;
+            let warnCalled = false;
+            const linter = create();
 
             linter.async = function () {
                 return function (valid) {
@@ -213,7 +213,7 @@ describe('Linter', function () {
 
             linter.run({
                 fail: {
-                    warn: function () {
+                    warn() {
                         assert.isTrue(lintCalled);
                         warnCalled = true;
                     }
@@ -231,10 +231,10 @@ describe('Linter', function () {
         });
 
         it('lint result data', function (done) {
-            var lintCalled = false;
-            var warnCalled = false;
-            var toStringCalled = false;
-            var linter = create();
+            let lintCalled = false;
+            let warnCalled = false;
+            let toStringCalled = false;
+            const linter = create();
 
             linter.async = function () {
                 return function (valid) {
@@ -247,7 +247,7 @@ describe('Linter', function () {
 
             linter.run({
                 fail: {
-                    warn: function () {
+                    warn() {
                         assert.isTrue(lintCalled);
                         assert.isTrue(toStringCalled);
                         warnCalled = true;
@@ -262,7 +262,7 @@ describe('Linter', function () {
                 });
 
                 callback(null, {
-                    toString: function () {
+                    toString() {
                         toStringCalled = true;
 
                         return 'test error';

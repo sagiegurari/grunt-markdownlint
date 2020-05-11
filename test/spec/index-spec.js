@@ -1,8 +1,8 @@
 'use strict';
 
-var chai = require('chai');
-var assert = chai.assert;
-var task = require('../../');
+const chai = require('chai');
+const assert = chai.assert;
+const task = require('../../');
 
 describe('Index Tests', function () {
     it('task loading', function () {

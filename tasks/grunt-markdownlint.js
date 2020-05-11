@@ -1,6 +1,6 @@
 'use strict';
 
-var Linter = require('./linter');
+const Linter = require('./linter');
 
 /**
  * Registers the markdown linting task.
@@ -11,9 +11,9 @@ var Linter = require('./linter');
  * @returns {function} The task function
  */
 module.exports = function registerTask(grunt) {
-    var runTask = function runTask() {
+    const runTask = function runTask() {
         //load first time only when actually invoked
-        var markdownlint = require('markdownlint');
+        const markdownlint = require('markdownlint');
 
         /*eslint-disable no-invalid-this*/
         Linter.prototype.run.call(this, grunt, markdownlint);
