@@ -1,6 +1,6 @@
 # grunt-markdownlint
 
-[![NPM Version](http://img.shields.io/npm/v/grunt-markdownlint.svg?style=flat)](https://www.npmjs.org/package/grunt-markdownlint) [![Build Status](https://travis-ci.org/sagiegurari/grunt-markdownlint.svg)](http://travis-ci.org/sagiegurari/grunt-markdownlint) [![Coverage Status](https://coveralls.io/repos/sagiegurari/grunt-markdownlint/badge.svg)](https://coveralls.io/r/sagiegurari/grunt-markdownlint) [![Known Vulnerabilities](https://snyk.io/test/github/sagiegurari/grunt-markdownlint/badge.svg)](https://snyk.io/test/github/sagiegurari/grunt-markdownlint) [![Inline docs](http://inch-ci.org/github/sagiegurari/grunt-markdownlint.svg?branch=master)](http://inch-ci.org/github/sagiegurari/grunt-markdownlint)<br>
+[![NPM Version](http://img.shields.io/npm/v/grunt-markdownlint.svg?style=flat)](https://www.npmjs.org/package/grunt-markdownlint) [![CI](https://github.com/sagiegurari/grunt-markdownlint/workflows/CI/badge.svg?branch=master)](https://github.com/sagiegurari/grunt-markdownlint/actions) [![Coverage Status](https://coveralls.io/repos/sagiegurari/grunt-markdownlint/badge.svg)](https://coveralls.io/r/sagiegurari/grunt-markdownlint) [![Known Vulnerabilities](https://snyk.io/test/github/sagiegurari/grunt-markdownlint/badge.svg)](https://snyk.io/test/github/sagiegurari/grunt-markdownlint) [![Inline docs](http://inch-ci.org/github/sagiegurari/grunt-markdownlint.svg?branch=master)](http://inch-ci.org/github/sagiegurari/grunt-markdownlint)<br>
 [![License](https://img.shields.io/npm/l/grunt-markdownlint.svg?style=flat)](https://github.com/sagiegurari/grunt-markdownlint/blob/master/LICENSE) [![Total Downloads](https://img.shields.io/npm/dt/grunt-markdownlint.svg?style=flat)](https://www.npmjs.org/package/grunt-markdownlint) [![Dependency Status](https://david-dm.org/sagiegurari/grunt-markdownlint.svg)](https://david-dm.org/sagiegurari/grunt-markdownlint) [![devDependency Status](https://david-dm.org/sagiegurari/grunt-markdownlint/dev-status.svg)](https://david-dm.org/sagiegurari/grunt-markdownlint?type=dev)
 
 > A grunt task for markdown style checker and lint tool.
@@ -84,6 +84,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2020-05-11  | v3.0.0  | Migrate to github actions and upgrade minimal node version |
 | 2020-04-13  | v2.10.0 | Upgrade markdownlint version |
 | 2018-06-07  | v2.0.0  | Upgrade markdownlint and minimal node version |
 | 2018-05-29  | v1.1.6  | Upgrade markdownlint version |

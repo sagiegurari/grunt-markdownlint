@@ -19,14 +19,6 @@ describe('Grunt Markdownlint', function () {
             options() {
                 return {};
             },
-            async() {
-                return function (valid) {
-                    assert.isTrue(valid);
-                    assert.isTrue(okCalled);
-
-                    done();
-                };
-            },
             log: {
                 ok() {
                     okCalled = true;
@@ -38,6 +30,15 @@ describe('Grunt Markdownlint', function () {
                     assert.isDefined(message);
                 }
             }
+        };
+
+        grunt.async = function () {
+            return function doneCallback(valid) {
+                assert.isTrue(valid);
+                assert.isTrue(okCalled);
+
+                done();
+            };
         };
 
         const taskFunction = task(grunt);

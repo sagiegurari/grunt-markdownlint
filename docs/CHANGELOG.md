@@ -1,5 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2020-05-11  | v3.0.0  | Migrate to github actions and upgrade minimal node version |
 | 2020-04-13  | v2.10.0 | Upgrade markdownlint version |
 | 2018-06-07  | v2.0.0  | Upgrade markdownlint and minimal node version |
 | 2018-05-29  | v1.1.6  | Upgrade markdownlint version |
