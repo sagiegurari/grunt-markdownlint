@@ -83,6 +83,7 @@ See [contributing guide](.github/CONTRIBUTING.md)
 
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2020-11-26  | v3.1.1  | Upgrade markdownlint version |
 | 2020-09-22  | v3.1.0  | Upgrade markdownlint version |
 | 2020-05-11  | v3.0.0  | Migrate to github actions and upgrade minimal node version |
 | 2020-04-13  | v2.10.0 | Upgrade markdownlint version |
