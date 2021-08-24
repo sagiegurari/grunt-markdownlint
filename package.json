@@ -46,7 +46,7 @@
     }
   },
   "dependencies": {
-    "markdownlint": "^0.23.0"
+    "markdownlint": "^0.24.0"
   },
   "devDependencies": {
     "chai": "latest",
