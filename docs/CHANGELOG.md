@@ -1,5 +1,6 @@
 | Date        | Version | Description |
 | ----------- | ------- | ----------- |
+| 2021-08-24  | v3.1.3  | Upgrade markdownlint version |
 | 2021-02-08  | v3.1.2  | Upgrade markdownlint version |
 | 2020-11-26  | v3.1.1  | Upgrade markdownlint version |
 | 2020-09-22  | v3.1.0  | Upgrade markdownlint version |
